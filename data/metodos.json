@@ -1,0 +1,26 @@
+[
+  {
+    "id": "drop_set",
+    "nombre": "Drop set",
+    "descripcion": "Al llegar al fallo técnico en la última serie, bajá el peso un 15-20% y seguí sin pausa hasta un nuevo fallo técnico.",
+    "nivelMinimo": "intermedio",
+    "frecuenciaMaximaSemanal": 2,
+    "seccionReferencia": "5.1 / 5.2"
+  },
+  {
+    "id": "rest_pause",
+    "nombre": "Rest-pause",
+    "descripcion": "Al llegar al fallo técnico, descansá 15-20 segundos respirando, y hacé 2-3 repeticiones más con el mismo peso. Repetí una vez más si podés.",
+    "nivelMinimo": "intermedio",
+    "frecuenciaMaximaSemanal": 2,
+    "seccionReferencia": "5.1 / 5.2"
+  },
+  {
+    "id": "myo_reps",
+    "nombre": "Myo-reps",
+    "descripcion": "Una serie de activación cerca del fallo, seguida de mini-series de 3-5 repeticiones con pausas de 15-20 segundos entre cada una, hasta que ya no puedas mantener el ritmo.",
+    "nivelMinimo": "avanzado",
+    "frecuenciaMaximaSemanal": 1,
+    "seccionReferencia": "5.1 / 5.2"
+  }
+]

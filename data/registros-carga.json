@@ -1,0 +1,402 @@
+[
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-banca-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:08.752Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-banca-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:09.632Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-banca-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:09.819Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-remo-con-barra-agarre-prono",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:11.674Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-remo-con-barra-agarre-prono",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:12.360Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-remo-con-barra-agarre-prono",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:12.515Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-sentadilla-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:13.999Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-sentadilla-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:14.750Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-sentadilla-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:15.262Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-peso-muerto-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:16.953Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-peso-muerto-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:17.529Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-peso-muerto-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:17.680Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-crunch-cruzado",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:19.465Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-crunch-cruzado",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:20.144Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-crunch-cruzado",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:26:20.331Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-militar-de-pie",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:47.416Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-militar-de-pie",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:48.030Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-militar-de-pie",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:48.230Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-remo-con-barra-agarre-prono",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:50.482Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-remo-con-barra-agarre-prono",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:51.108Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-remo-con-barra-agarre-prono",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:51.269Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-sentadilla-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:53.196Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-sentadilla-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:53.801Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-sentadilla-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:53.971Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-peso-muerto-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:56.058Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-peso-muerto-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:56.882Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-peso-muerto-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:57.041Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-crunch-cruzado",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:58.857Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-crunch-cruzado",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:59.659Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-crunch-cruzado",
+    "cargaKg": 0,
+    "repsRealizadas": 10,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:28:59.825Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-banca-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:36.439Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-banca-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:37.467Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-banca-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:38.071Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-banca-con-barra",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:38.761Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-inclinado-con-mancuernas",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:43.445Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-inclinado-con-mancuernas",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:44.103Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-inclinado-con-mancuernas",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:44.272Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-inclinado-con-mancuernas",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:44.456Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-militar-de-pie",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:46.302Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-militar-de-pie",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:46.872Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-militar-de-pie",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:47.036Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-press-militar-de-pie",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:47.215Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-extensi-n-de-tr-ceps-en-polea",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:52.667Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-extensi-n-de-tr-ceps-en-polea",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:53.270Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-extensi-n-de-tr-ceps-en-polea",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:53.615Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-extensi-n-de-tr-ceps-en-polea",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:54.369Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-escalador-mountain-climbers",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:56.537Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-escalador-mountain-climbers",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:57.682Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-escalador-mountain-climbers",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:57.849Z"
+  },
+  {
+    "usuarioId": "demo",
+    "ejercicioId": "ex-escalador-mountain-climbers",
+    "cargaKg": 0,
+    "repsRealizadas": 8,
+    "rirReportado": 2,
+    "fecha": "2026-08-17T13:29:58.376Z"
+  }
+]

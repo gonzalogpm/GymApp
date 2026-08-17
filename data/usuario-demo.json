@@ -1,0 +1,23 @@
+{
+  "id": "demo",
+  "experiencia": "intermedio",
+  "objetivoPrincipal": "hipertrofia",
+  "diasPorSemana": 5,
+  "equipamientoDisponible": [
+    "barra",
+    "mancuernas",
+    "maquina",
+    "polea",
+    "kettlebell",
+    "barra_ez"
+  ],
+  "condicionesEspeciales": [],
+  "historialLesiones": [],
+  "alteracionesPosturales": [],
+  "franjaEtaria": "adulto",
+  "consentimientoAdultoConfirmado": true,
+  "estadoGestacional": "no_aplica",
+  "autorizacionMedicaConfirmada": true,
+  "nombre": "",
+  "deporte": null
+}

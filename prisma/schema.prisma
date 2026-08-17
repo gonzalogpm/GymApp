@@ -1,0 +1,236 @@
+// Esquema de datos — App de Rutinas
+// Traducido directamente de las secciones 22 (capa de conocimiento) y 24
+// (usuario / rutina / registros de seguimiento) del marco teórico.
+//
+// NOTA PARA GONZALO: este archivo se generó sin poder ejecutar `prisma generate`
+// en este entorno (la red del sandbox bloquea la descarga del motor de Prisma).
+// En tu máquina esto no va a pasar. Corré:
+//   npm install
+//   npx prisma generate
+//   npx prisma migrate dev --name init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// ---------- CAPA DE CONOCIMIENTO (sección 22) ----------
+
+model Ejercicio {
+  id                    String   @id @default(cuid())
+  nombreEs              String
+  nombreEn              String?
+  patronMovimiento      String // empuje_horizontal | empuje_vertical | traccion_horizontal | ...
+  grupoMuscularAgonista String
+  grupoMuscularAntagonista String
+  musculosSecundarios   String // JSON string array
+  tipo                  String // multiarticular | monoarticular
+  equipamientoRequerido String // JSON string array
+  nivelDificultad       String // principiante | intermedio | avanzado
+  contraindicaciones    String // JSON array de {lesion, fase, severidad}
+  deportesRelevantes    String // JSON string array
+  objetivoCorrectivo    String? // JSON string array (sección 13.6 / 16)
+  variantePrevioId      String?
+  varianteSiguienteId   String?
+  instruccionesEs       String
+  instruccionesEn       String?
+  gifUrl                String?
+  videoUrl              String?
+  mediaStatus           String   @default("pendiente") // pendiente | cargado
+  tagsAdicionales       String // JSON string array
+
+  rutinaEjercicios      RutinaEjercicio[]
+  registrosCarga        RegistroCarga[]
+  registrosMolestia     RegistroMolestia[]
+  testsFuerza           TestFuerza[]
+
+  @@map("ejercicios")
+}
+
+model Metodo {
+  id                     String  @id @default(cuid())
+  nombreEs               String
+  nombreEn               String?
+  tipo                   String // intensificacion | tempo | densidad | pausa_intraserie
+  descripcion            String
+  parametrosConfigurables String // JSON
+  nivelMinimo            String // principiante | intermedio | avanzado
+  contraindicadoSi        String // JSON string array
+  frecuenciaMaximaSemanal Int?
+  patronesMovimiento      String // JSON string array
+  tipoEjercicio            String // multiarticular | monoarticular | ambos
+  seccionReferencia        String
+
+  rutinaEjercicios RutinaEjercicio[]
+
+  @@map("metodos")
+}
+
+model PlantillaDeporte {
+  id                 String @id @default(cuid())
+  nombreEs           String
+  nombreEn           String?
+  patronDominante    String // JSON string array
+  demandasEnergeticas String // aerobico | anaerobico | mixto
+  patronEsfuerzo      String // continuo | intermitente
+  bloques             String // JSON completo (fuerza_base, cardio_especifico, etc.)
+  zonasLesionTipicas   String // JSON string array
+  seccionReferencia    String
+
+  @@map("plantillas_deporte")
+}
+
+// ---------- CAPA DE USUARIO Y SEGUIMIENTO (sección 24) ----------
+
+model Usuario {
+  id                     String  @id @default(cuid())
+  email                  String  @unique
+  nombre                 String
+  edad                   Int?
+  sexoBiologico           String?
+  pesoKg                  Float?
+  alturaCm                Float?
+  experiencia             String  @default("principiante")
+  objetivoPrincipal        String?
+  diasSemanaDisponibles     Int?
+  minutosSesionDisponibles  Int?
+  equipamientoDisponible    String // JSON string array
+  deporte                   String?
+  condicionesEspeciales      String // JSON string array
+  historialLesiones          String // JSON array (sección 24.1)
+  alteracionesPosturales      String // JSON string array (sección 13.6)
+  franjaEtaria                 String  @default("adulto") // niño_preadolescente | adolescente | adulto
+  consentimientoAdultoConfirmado Boolean @default(false)
+  consentimientoAdultoFecha       DateTime?
+  estadoGestacional                String  @default("no_aplica") // no_aplica | embarazada | posparto
+  semanaGestacionOPosparto          Int?
+  autorizacionMedicaConfirmada       Boolean @default(false)
+  autorizacionMedicaFecha             DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  rutinas             Rutina[]
+  testsFuerza         TestFuerza[]
+  rehabCheckpoints    RehabCheckpoint[]
+
+  @@map("usuarios")
+}
+
+model Rutina {
+  id                    String   @id @default(cuid())
+  usuarioId             String
+  usuario               Usuario  @relation(fields: [usuarioId], references: [id])
+  objetivo               String
+  split                  String // full_body | upper_lower | ppl | agonista_antagonista | bro_split | deportiva | rehab
+  diasPorSemana            Int
+  modeloPeriodizacion       String // lineal | ondulante | por_bloques | autorregulada
+  faseMesociclo              String // acumulacion | intensificacion | realizacion | descarga
+  semanaActualMesociclo       Int      @default(1)
+  fechaInicio                  DateTime @default(now())
+  auditoriaGeneracion            String? // JSON: alertas disparadas + sustituciones
+
+  ejercicios RutinaEjercicio[]
+  sesiones   Sesion[]
+
+  @@map("rutinas")
+}
+
+// Tabla intermedia RUTINA <-> EJERCICIO (muchos a muchos, sección 24.8)
+model RutinaEjercicio {
+  id              String    @id @default(cuid())
+  rutinaId        String
+  rutina          Rutina    @relation(fields: [rutinaId], references: [id])
+  ejercicioId     String
+  ejercicio       Ejercicio @relation(fields: [ejercicioId], references: [id])
+  dia             Int
+  orden           Int
+  series          Int
+  repsObjetivo    String // rango, ej. "8-12"
+  intensidad      String? // %1RM o RIR objetivo
+  tempo           String?
+  descansoSeg     Int?
+  metodoAplicadoId String?
+  metodoAplicado  Metodo?   @relation(fields: [metodoAplicadoId], references: [id])
+
+  @@map("rutina_ejercicios")
+}
+
+model Sesion {
+  id                       String   @id @default(cuid())
+  rutinaId                 String
+  rutina                   Rutina   @relation(fields: [rutinaId], references: [id])
+  fecha                    DateTime @default(now())
+  diaDeRutina              Int
+  checkInPreSesion          String? // descansado | cansado | con_molestia_puntual
+  zonaMolestiaPuntual        String?
+  ajusteAutomaticoAplicado    String?
+  completada                   Boolean  @default(false)
+
+  registrosCarga     RegistroCarga[]
+  registrosMolestia  RegistroMolestia[]
+
+  @@map("sesiones")
+}
+
+model RegistroCarga {
+  id               String    @id @default(cuid())
+  sesionId         String
+  sesion           Sesion    @relation(fields: [sesionId], references: [id])
+  ejercicioId      String
+  ejercicio        Ejercicio @relation(fields: [ejercicioId], references: [id])
+  serieNumero      Int
+  cargaKg          Float
+  repsRealizadas   Int
+  rirReportado     Int?
+  metodoAplicadoId String?
+
+  @@map("registros_carga")
+}
+
+model RegistroMolestia {
+  id                    String    @id @default(cuid())
+  sesionId              String
+  sesion                Sesion    @relation(fields: [sesionId], references: [id])
+  ejercicioId           String
+  ejercicio             Ejercicio @relation(fields: [ejercicioId], references: [id])
+  serieNumero           Int?
+  tipo                  String // fatiga_muscular_normal | molestia_articular | dolor_agudo_punzante
+  zonaCorporal          String
+  intensidad            Int // 1-10
+  continuoOPuntual      String // solo_este_ejercicio | se_repite_hace_varias_sesiones
+  createdAt             DateTime @default(now())
+
+  @@map("registros_molestia")
+}
+
+model TestFuerza {
+  id             String    @id @default(cuid())
+  usuarioId      String
+  usuario        Usuario   @relation(fields: [usuarioId], references: [id])
+  ejercicioId    String
+  ejercicio      Ejercicio @relation(fields: [ejercicioId], references: [id])
+  tipoTest       String // 1rm_estimado | test_resistencia
+  valorResultado Float
+  formulaUsada   String? // epley | brzycki
+  fecha          DateTime  @default(now())
+
+  @@map("tests_fuerza")
+}
+
+model RehabCheckpoint {
+  id                    String   @id @default(cuid())
+  usuarioId             String
+  usuario               Usuario  @relation(fields: [usuarioId], references: [id])
+  lesion                String
+  faseActual            Int
+  faseConfirmadaHasta   Int      @default(0)
+  confirmadoPor         String? // usuario | profesional_vinculado
+  fechaConfirmacion     DateTime?
+  bloqueado             Boolean  @default(true)
+
+  @@map("rehab_checkpoints")
+}

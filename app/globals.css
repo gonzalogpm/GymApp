@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-fondo: #F5F1EA;
+  --color-tinta: #26241F;
+  --color-pino: #2C3E32;
+  --color-terracota: #C97B4A;
+  --color-salvia: #8FA593;
+  --color-terracota-suave: #D99B76;
+  --color-semaforo-verde: #7A9179;
+  --color-semaforo-amarillo: #DDB84E;
+  --color-semaforo-rojo: #B85C4A;
+}
+
+@theme inline {
+  --color-fondo: var(--color-fondo);
+  --color-tinta: var(--color-tinta);
+  --color-pino: var(--color-pino);
+  --color-terracota: var(--color-terracota);
+  --color-salvia: var(--color-salvia);
+  --color-terracota-suave: var(--color-terracota-suave);
+  --color-semaforo-verde: var(--color-semaforo-verde);
+  --color-semaforo-amarillo: var(--color-semaforo-amarillo);
+  --color-semaforo-rojo: var(--color-semaforo-rojo);
+  --font-serif-editorial: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans-calida: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-fondo);
+  color: var(--color-tinta);
+  font-family: var(--font-sans-calida);
+}
+

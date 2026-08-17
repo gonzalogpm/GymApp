@@ -1,0 +1,123 @@
+{
+  "demo": {
+    "diaIndice": 1,
+    "semanaMesociclo": 1,
+    "rutina": {
+      "nombre": "Tracción (pull) — Sesión de hipertrofia",
+      "fecha": "lunes, 17 de agosto",
+      "diaDelCiclo": {
+        "indice": 1,
+        "total": 3,
+        "etiqueta": "Tracción (pull)"
+      },
+      "mesociclo": {
+        "semana": 1,
+        "duracionSemanas": 4,
+        "fase": "acumulacion",
+        "etiquetaFase": "Acumulación (más volumen)",
+        "explicacion": {
+          "titulo": "Semana de Acumulación",
+          "comoTrabajamos": "Trabajamos con el volumen más alto del mesociclo (más series por ejercicio) y una intensidad moderada, dejando margen de reserva (RIR 2-3) en la mayoría de las series.",
+          "porque": "El volumen es el principal disparador del estímulo de adaptación muscular. Acumular trabajo de calidad ahora, sin llegar al límite en cada serie, construye una base amplia de estímulo mientras la fatiga se mantiene controlada — así llegamos frescos a las semanas siguientes, donde el tipo de estímulo cambia."
+        },
+        "mostrarIntroAutomatica": false
+      },
+      "ejercicios": [
+        {
+          "id": "ex-remo-con-barra-agarre-prono",
+          "nombre": "Remo con barra, agarre prono",
+          "patronMovimiento": "traccion_horizontal",
+          "series": 4,
+          "reps": "8-12",
+          "descansoSeg": 75,
+          "instrucciones": "Con el torso inclinado y la espalda neutra, tirá de la barra hacia el abdomen bajo llevando los codos hacia atrás, y bajá controlado.",
+          "videoUrl": null,
+          "metodoAplicado": null,
+          "equipamientoRequerido": [
+            "barra"
+          ],
+          "escaleraSiguienteId": null,
+          "esIsometrico": false,
+          "paraLesion": null
+        },
+        {
+          "id": "ex-remo-sentado-en-polea",
+          "nombre": "Remo sentado en polea",
+          "patronMovimiento": "traccion_horizontal",
+          "series": 4,
+          "reps": "8-12",
+          "descansoSeg": 75,
+          "instrucciones": "Sentado con las rodillas semiflexionadas, tirá del agarre hacia el abdomen manteniendo la espalda neutra, y volvé controlado.",
+          "videoUrl": null,
+          "metodoAplicado": null,
+          "equipamientoRequerido": [
+            "polea"
+          ],
+          "escaleraSiguienteId": null,
+          "esIsometrico": false,
+          "paraLesion": null
+        },
+        {
+          "id": "ex-dominadas",
+          "nombre": "Dominadas",
+          "patronMovimiento": "traccion_vertical",
+          "series": 4,
+          "reps": "8-12",
+          "descansoSeg": 75,
+          "instrucciones": "Colgado de la barra con agarre prono, tirá hacia arriba hasta que el mentón supere la barra, y bajá controlado hasta extensión completa.",
+          "videoUrl": null,
+          "metodoAplicado": null,
+          "equipamientoRequerido": [
+            "ninguno"
+          ],
+          "escaleraSiguienteId": null,
+          "esIsometrico": false,
+          "paraLesion": null
+        },
+        {
+          "id": "ex-curl-de-b-ceps-con-barra",
+          "nombre": "Curl de bíceps con barra",
+          "patronMovimiento": "flexion_codo",
+          "series": 4,
+          "reps": "8-12",
+          "descansoSeg": 75,
+          "instrucciones": "De pie, flexioná los codos llevando la barra hacia los hombros sin balancear el torso, y bajá controlado.",
+          "videoUrl": null,
+          "metodoAplicado": {
+            "nombre": "Drop set",
+            "descripcion": "Al llegar al fallo técnico en la última serie, bajá el peso un 15-20% y seguí sin pausa hasta un nuevo fallo técnico."
+          },
+          "equipamientoRequerido": [
+            "barra"
+          ],
+          "escaleraSiguienteId": null,
+          "esIsometrico": false,
+          "paraLesion": null
+        },
+        {
+          "id": "ex-crunch-cruzado",
+          "nombre": "Crunch cruzado",
+          "patronMovimiento": "core_antirotacion",
+          "series": 4,
+          "reps": "8-12",
+          "descansoSeg": 75,
+          "instrucciones": "Acostado, llevá el codo hacia la rodilla contraria elevando el torso, alternando de lado en cada repetición.",
+          "videoUrl": null,
+          "metodoAplicado": null,
+          "equipamientoRequerido": [
+            "ninguno"
+          ],
+          "escaleraSiguienteId": null,
+          "esIsometrico": false,
+          "paraLesion": null
+        }
+      ],
+      "auditoria": {
+        "alertas": [],
+        "sustituciones": [],
+        "ratioEmpujeTraccion": 0
+      },
+      "moduloDeportivo": null
+    }
+  }
+}
